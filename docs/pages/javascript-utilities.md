@@ -171,8 +171,8 @@ $('selector').on('toggle.zf.trigger', handleToggle);
 Besides these useful click triggers, there are also other listeners for you to tap into. Need to know when the window has been resized, but only when it's done resizing? How about a debounced scroll event? Add this markup and JavaScript and you're good to go!
 
 ```html
-<div data-scroll="someId">...</div>
-<div data-resize="someId">...</div>
+<div id="someId" data-scroll>...</div>
+<div id="someId" data-resize>...</div>
 ```
 ```js
 $('#someId').on('scrollme.zf.trigger', handleScroll);
